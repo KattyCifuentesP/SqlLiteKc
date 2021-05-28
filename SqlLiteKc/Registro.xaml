@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SqlLiteKc.Registro"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+            </Frame>
+            <Label Text="Datos Estudiante"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese nombre"/>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese usuario"/>
+            <Entry x:Name="txtPassword" Placeholder="Ingrese contraseña" IsPassword="True"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Insertar"
+                        x:Name="btnIngresar"
+                        Clicked="btnIngresar_Clicked">
+                </Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar"
+                        x:Name="btnRegresa"
+                        Clicked="btnRegresa_Clicked">
+                </Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
